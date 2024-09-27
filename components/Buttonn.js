@@ -8,7 +8,7 @@ const SignInButton = () => {
   console.log('Status:', status);
   const handleSignIn = () => {
     // Redirect to the custom sign-in page
-    signIn(Credential, { callbackUrl: '/auth/signin' });
+    signIn('credentials', { callbackUrl: '/auth/signin' });
   };
 
 
