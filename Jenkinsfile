@@ -27,9 +27,7 @@ pipeline {
                     // SSH into EC2 instance using the private key
                       sh """
                       ssh -i \$SSH_KEY -o StrictHostKeyChecking=no ubuntu@ec2-52-7-190-93.compute-1.amazonaws.com << 'EOF'
-                      # Commands to run on EC2
-                      docker pull chandru47/mynextapp:latest
-                      docker run -d --name mynextapp -p 80:3000 chandru47/mynextapp:latest
+                      echo "hello from EC2"
                       EOF
                       """
                     }
