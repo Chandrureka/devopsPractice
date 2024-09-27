@@ -8,7 +8,7 @@ function home(){
  
             <div className="text-xl font-bold">
              <span>Pals</span>
-             <span className="text-blue-600">Crew</span>
+             <span className="text-blue-600">Creww</span>
             </div>
 
  
