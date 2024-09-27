@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                    
-                    sh 'sudo docker build -t chandru47/mynextapp:latest .'
+                    sh 'docker build -t chandru47/mynextapp:latest .'
                 }
             }
         }
