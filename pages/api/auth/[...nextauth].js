@@ -13,7 +13,7 @@ export default NextAuth({
         password: { label: 'Password', type: 'password', placeholder: 'your-password' },
       },
       // No authorization logic; it will be handled on your custom sign-in page
-      authorize: async (credentials) => {
+      authorize: async (_credentials) => {
         return null; // Skip custom logic
       },
     }),
