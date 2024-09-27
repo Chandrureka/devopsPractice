@@ -23,7 +23,7 @@ pipeline {
             steps {
                 script {
                     // Use the SSH key stored in Jenkins credentials
-                    withCredentials([sshUserPrivateKey(credentialsId: 'ec2-ssh-key', keyFileVariable: 'SSH_KEY')]) {
+                    withCredentials([sshUserPrivateKey(credentialsId: 'ssh_key', keyFileVariable: 'SSH_KEY')]) {
                     // SSH into EC2 instance using the private key
                       sh """
                      ssh -i \$SSH_KEY -o StrictHostKeyChecking=no ubuntu@ec2-52-7-190-93.compute-1.amazonaws.com << EOF
