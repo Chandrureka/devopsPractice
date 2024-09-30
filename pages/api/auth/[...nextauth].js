@@ -13,8 +13,16 @@ export default NextAuth({
         password: { label: 'Password', type: 'password', placeholder: 'your-password' },
       },
       // No authorization logic; it will be handled on your custom sign-in page
-      authorize: async (_credentials) => {
-        return null; // Skip custom logic
+      authorize: async (credentials) => {
+        const { username, password } = credentials;
+
+        // Temporary static user validation for development purposes
+        if (username === 'chan' && password === 'chan') {
+          return { id: 1, name: "chan", email: "testuser@example.com" };
+        }
+
+        // If the credentials do not match, return null, which will trigger an error
+        return null;
       },
     }),
     GoogleProvider({
