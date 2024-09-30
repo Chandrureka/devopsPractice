@@ -24,7 +24,7 @@ export default NextAuth({
     // Other providers here
   ],
   pages: {
-    signIn: 'http://52.7.190.93:3000/auth/signin', // Points to the custom sign-in page you created
+    signIn: 'http://52.7.190.93/auth/signin', // Points to the custom sign-in page you created
   },
   // Other NextAuth.js configurations
 });
