@@ -8,7 +8,7 @@ const SignInButton = () => {
   console.log('Status:', status);
   const handleSignIn = () => {
     // Redirect to the custom sign-in page
-    signIn('credentials', { callbackUrl: 'https://52.7.190.93:3000/auth/signin' });
+    signIn('credentials', { callbackUrl: 'http://52.7.190.93:3000' });
   };
 
 
