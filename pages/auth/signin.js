@@ -40,7 +40,7 @@ const SignIn = () => {
           </button>
         </form>
         <button
-          onClick={() => signIn('google',{ callbackUrl: '/' })}
+          onClick={() => signIn('google')}
           className="w-full bg-red-600 text-white p-2 rounded hover:bg-red-700 transition duration-200"
         >
           Sign in with Google
